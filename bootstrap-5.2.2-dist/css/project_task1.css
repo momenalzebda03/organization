@@ -2,6 +2,8 @@
     --color_blue: #6A38A9;
     --color_white: white;
     --color_orange: orange;
+    --color_black: black;
+    --color_darkslategray: darkslategray;
 }
 
 body {
@@ -13,11 +15,15 @@ body {
     width: 100%;
     height: 700px;
     background-image: url("../../image/20230226_ht_hp_sanrio33.jfif");
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
 }
 
-.div_image nav div {
-    margin-left: 13px;
+.div_image .h1 {
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
 }
 
 .div_image nav div div {
@@ -54,21 +60,164 @@ body {
 .div_image nav div .collapse ul li button {
     background-color: var(--color_blue);
     color: var(--color_white);
-    padding: 10px 30px 10px 30px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: none;
     transition: 0.5s;
 }
 
 .div_image nav div .collapse ul li button:hover {
-    background-color: var(--color_orange);
+    background-color: var(--color_black);
 }
 
 /* end header */
 
+/* start dringing */
+.container .row {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.container .row .div_right {
+    text-align: right;
+}
+
+.container .row .div_center h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container .row .div_center h1::before {
+    content: "brining";
+    font-size: 10px;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: -50px;
+}
+
+.container .row .div_center p {
+    color: var(--color_darkslategray);
+}
+
+.container .row .div_center button {
+    background-color: var(--color_black);
+    color: var(--color_white);
+    padding: 8px 30px 8px 30px;
+    border: none;
+    box-shadow: 0px 0px 2px 4px #88888888;
+    transition: 0.5s;
+}
+
+.container .row .div_center button:hover {
+    background-color: var(--color_blue);
+}
+
+.container .row .div_center button .icon {
+    transform: translate(0px, 2px);
+    animation-name: frames_icon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes frames_icon {
+    0% {
+        transform: translate(0px, 2px);
+    }
+
+    50% {
+        transform: translate(5px, 2px);
+    }
+
+    100% {
+        transform: translate(0px, 2px);
+    }
+}
+
+.container .row .div_right .div_flex {
+    position: absolute;
+}
+
+.container .row .div_right .div_flex img {
+    width: 32.8%;
+}
+
+.container .row .div_right .div_flex .image_box {
+    box-shadow: -19px 25px var(--color_blue);
+}
+
+.container .row .div_right .div_flex .image_margin {
+    transform: translate(180px, 150px);
+    box-shadow: 0px 0px 30px #ccc;
+    transition: 0.5s;
+}
+
+.container .row .div_right .div_flex .image_margin:hover {
+    margin-top: -10px;
+}
+
+.container .row .div_right .div_flex .image_margin1 {
+    transform: translate(190px, 220px);
+    box-shadow: 0px 0px 30px #ccc;
+}
+
+/* end dringing */
 /* start media */
 @media (max-width: 990px) and (min-width: 0px) {
-    .div_image nav div {
-        margin-left: 0px;
+    .div_image nav div .collapse ul {
+        gap: 0px;
+    }
+
+    .div_image .h1 {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .div_container {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .div_container .row div .div_width,
+    .div_container .row div .div_width p {
+        width: 100%;
+    }
+
+    .div_container .row div .div_width h1 {
+        font-size: 30px;
+    }
+
+    .container .row .div_center h1::before {
+        display: none;
+    }
+
+    .container .row {
+        margin-top: 100px;
+    }
+
+    .container .row .div_center,
+    .container .row .div_right {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .container .row .div_right .div_flex {
+        flex-direction: column;
+    }
+
+    .container .row .div_right .div_flex img {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    .container .row .div_center h1 {
+        font-size: 35px;
+    }
+
+    .container .row .div_right .div_flex .image_margin,
+    .container .row .div_right .div_flex .image_margin1 {
+        transform: translate(0px, 0px);
     }
 }
 
@@ -77,8 +226,9 @@ body {
         width: 91%;
     }
 
-    .div_image nav div .collapse ul {
-        gap: 90px;
+    .div_image .h1,
+    .div_row .div_center h1 {
+        font-size: 20px;
     }
 }
 
