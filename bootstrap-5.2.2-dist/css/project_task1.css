@@ -1,5 +1,5 @@
 :root {
-    --color_blue: #6A38A9;
+    --color_blue: hsl(267, 50%, 44%);
     --color_white: white;
     --color_orange: orange;
     --color_black: black;
@@ -9,6 +9,7 @@
 
 body {
     text-transform: capitalize;
+    overflow-x: hidden;
 }
 
 /* start header */
@@ -41,10 +42,6 @@ body {
     font-weight: bold;
 }
 
-.div_image nav div .collapse {
-    margin-right: 50px;
-}
-
 .div_image nav div .collapse ul {
     display: flex;
     gap: 100px;
@@ -75,13 +72,9 @@ body {
 /* end header */
 
 /* start dringing */
-.container .row {
+.container .div_row_margin {
     margin-top: 200px;
     width: 100%;
-}
-
-.container .row .div_right {
-    text-align: right;
 }
 
 .h1_bold {
@@ -168,12 +161,7 @@ body {
 
 .container .row .div_right .div_flex .div_margin2 {
     margin-top: 250px;
-    z-index: 1;
     z-index: 2;
-}
-
-.container .row .div_right .div_flex div {
-    text-align: left;
 }
 
 .container .row .div_right .div_flex div p {
@@ -184,7 +172,7 @@ body {
 /* end dringing */
 /* start happy */
 .div_color {
-    margin-top: 20%;
+    margin-top: 25%;
     padding-bottom: 50px;
     background-color: #eee;
 }
@@ -193,8 +181,8 @@ body {
     margin-top: -100px;
 }
 
-.div_color .container .row {
-    margin-top: -230px;
+.div_color .container .div_bottom {
+    margin-top: -450px;
 }
 
 .p_margin {
@@ -205,12 +193,7 @@ body {
     margin-top: -50px;
     background-color: var(--color_white);
     padding: 40px;
-    width: 380px;
     box-shadow: 0px 20px 30px #b1b1b1;
-}
-
-.div_color .container .row div .row {
-    position: relative;
 }
 
 .div_color .container .row div .div_white .div_flex1 {
@@ -277,8 +260,9 @@ body {
 }
 
 .div_top .h1_size {
+    text-align: center;
     font-weight: bold;
-    font-size: 170px;
+    font-size: 89px;
 }
 
 /* end metrics */
@@ -286,12 +270,180 @@ body {
 .div_make {
     margin-top: 150px;
     display: flex;
-    height: 700px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     background-color: #f2f0f0;
     width: 100%;
 }
 
+.div_make .container .row .div_right .div_flex .div_margin2 .div_color_right {
+    padding-top: 90px;
+    background-color: var(--color_blue);
+    width: 2800px;
+    height: 660px;
+    margin-top: -350px;
+}
+
+.div_make .container .row .div_right .div_flex .div_margin2 .div_color_right img {
+    box-shadow: none;
+    width: 250px;
+    margin-left: -100px;
+    box-shadow: -20px 0px 50px rgb(85, 85, 85);
+    border-radius: 50px;
+}
+
+.div_make .container .row .div_right .div_flex .div_margin2 .div_color_right div .p_margin_img {
+    margin-top: -25px;
+    color: #c3c3c3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* end make */
+/* start visual */
+.div_visual {
+    margin-top: 15%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eee;
+}
+
+.div_visual .row div .row div .image_smill {
+    width: 500px;
+    position: relative;
+}
+
+.div_margin_top {
+    margin-top: 70px;
+}
+
+.div_visual .div_cont_bottom {
+    position: relative;
+    margin-top: -100px;
+}
+
+.div_cont_bottom .row div .div_white {
+    background-color: var(--color_white);
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 6px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.div_cont_bottom .row div .div_white:hover {
+    margin-top: 0px;
+}
+
+.div_cont_bottom .row div .div_white p {
+    color: dimgray;
+}
+
+.div_cont_bottom .row div .div_white .p_color {
+    color: blueviolet;
+}
+
+.div_cont_bottom .row div .div_white img {
+    width: 300px;
+    height: 250px;
+}
+
+/* end visual */
+/* start hoor */
+.div_margin_my {
+    margin-top: 180px;
+}
+
+.div_margin_my .container .div_flex3 {
+    display: flex;
+    gap: 60px;
+}
+
+.div_margin_my .container .div_flex3 .div_col_color {
+    background-color: #6A599F;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding: 40px;
+}
+
+.div_margin_my .container .div_flex3 .div_col_color img {
+    height: 300px;
+    margin-top: -80px;
+}
+
+.div_margin_my .container .div_flex3 div .div_flex2 .my_image {
+    width: 150px;
+}
+
+.div_margin_my .container .div_flex3 div .div_flex2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.div_margin_my .container .div_flex3 div .div_flex2 h1 {
+    font-weight: bold;
+}
+
+/* end hoor */
+/* start footer */
+.div_footer {
+    padding: 100px;
+    margin-top: 30px;
+    background-color: #0F1A2E;
+    color: white;
+}
+
+.div_footer .container .row div .div_flex4 {
+    display: flex;
+    gap: 10px;
+}
+
+.div_footer .container .row div .div_flex4 .div_my_logo {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--color_white);
+}
+
+.div_footer .container .row div .div_flex4 h5 {
+    font-weight: bold;
+}
+
+.div_footer .container .row div .p_color1 {
+    color: darkgray;
+}
+
+.div_footer .container .row div .div_flex5 {
+    display: flex;
+    gap: 20px;
+}
+
+.div_footer .container .row div .div_flex5 .my_icon {
+    background-color: var(--color_darkslategray);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.div_footer .container .row div .div_flex5 .my_icon:hover {
+    background-color: var(--color_orange);
+    color: var(--color_black);
+}
+
+.div_footer .container .row .div_footer_p {
+    color: #ccc;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.div_footer .container .row .div_footer_p p:hover {
+    color: var(--color_orange);
+}
+
+/* end footer */
 /* start media */
 @media (max-width: 990px) and (min-width: 0px) {
     .div_image nav div .collapse ul {
@@ -300,25 +452,6 @@ body {
 
     .div_image .h1 {
         text-align: center;
-        font-size: 33px;
-    }
-
-    .div_container {
-        text-align: center;
-        margin-top: 100px;
-    }
-
-    .div_container .row div .div_width,
-    .div_container .row div .div_width p {
-        width: 100%;
-    }
-
-    .div_container .row div .div_width h1 {
-        font-size: 30px;
-    }
-
-    .h1_bold::before {
-        display: none;
     }
 
     .container .row {
@@ -334,12 +467,12 @@ body {
     .container .row .div_right .div_flex {
         margin-top: -250px;
         position: relative;
-        flex-direction: column;
     }
 
-    .h1_bold {
-        text-align: center;
-        font-size: 35px;
+    .container .row .div_right .div_flex,
+    .div_margin_my .container .div_flex3,
+    .div_margin_my .container .div_flex3 div .div_flex2 {
+        flex-direction: column;
     }
 
     .container .row .div_right .div_flex div img,
@@ -352,45 +485,24 @@ body {
         margin-top: 0px;
     }
 
-    .container .row .div_right .div_flex .div_margin1,
-    .container .row .div_right .div_flex .div_margin2 {
-        transform: translate(0px, 0px);
-    }
-
     .p_margin,
-    .div_top .h1_size {
+    .div_top .h1_size,
+    .div_make .container .row .div_right .div_flex .div_margin2 .div_color_right div div,
+    .h1_bold::before,
+    .div_visual div .div_point_my {
         display: none;
     }
 
     .div_color .image_left {
         width: 100%;
-        margin-top: 20px;
-    }
-
-    .div_color .container .row {
-        margin-top: 50px;
     }
 
     .div_color .container .row div {
         text-align: center;
     }
 
-    .div_color .container .row div .div_white {
-        text-align: center;
-        width: 115%;
-    }
-
-    .div_color .container .row div .div_white .div_flex1 {
-        flex-direction: column;
-    }
-
-    .div_color .container .row div .div_white .div_flex1 img {
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    .div_color .container .row div .h1_mobile {
-        font-size: 20px;
+    .div_color .container .row {
+        margin-top: 50px;
     }
 
     .button_width {
@@ -400,6 +512,50 @@ body {
     .div_top .div_center2 {
         text-align: center;
         margin-left: 0px;
+    }
+
+    .div_make .container .row .div_right .div_flex .div_margin2 .div_color_right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    .div_make .container .row .div_right .div_flex .div_margin2 .div_color_right img {
+        box-shadow: none;
+        margin-left: 0px;
+    }
+
+    .div_visual .row div .row div .image_smill {
+        width: 100%;
+    }
+
+    .div_visual .row div .row .my_none {
+        display: none;
+    }
+
+    .div_margin_top {
+        text-align: center;
+    }
+
+    .div_margin_my .container .div_flex3 {
+        text-align: center;
+    }
+
+    .div_footer {
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    .div_footer .container .row {
+        text-align: center;
+    }
+
+    .div_footer .container .row div .div_flex4,
+    .div_footer .container .row div .div_flex5 {
+        justify-content: center;
+        margin-bottom: 20px;
     }
 }
 
