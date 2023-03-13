@@ -16,7 +16,10 @@ body {
 .div_image {
     padding-bottom: 240px;
     background-image: url("../../image/20230226_ht_hp_sanrio33.jfif");
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .div_image .h1 {
@@ -24,7 +27,6 @@ body {
     font-size: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 210px;
 }
 
 .div_image nav div div {
@@ -72,11 +74,6 @@ body {
 /* end header */
 
 /* start dringing */
-.container .div_row_margin {
-    margin-top: 200px;
-    width: 100%;
-}
-
 .h1_bold {
     font-weight: bold;
     font-size: 50px;
@@ -345,7 +342,7 @@ body {
 }
 
 .div_cont_bottom .row div .div_white img {
-    width: 300px;
+    width: 70%;
     height: 250px;
 }
 
@@ -364,12 +361,10 @@ body {
     background-color: #6A599F;
     display: flex;
     justify-content: center;
-    height: 400px;
-    padding: 40px;
 }
 
 .div_margin_my .container .div_flex3 .div_col_color img {
-    height: 300px;
+    height: 100%;
     margin-top: -80px;
 }
 
@@ -506,10 +501,6 @@ body {
         margin-top: 50px;
     }
 
-    .button_width {
-        width: 100%;
-    }
-
     .div_top .div_center2 {
         text-align: center;
         margin-left: 0px;
@@ -517,8 +508,8 @@ body {
 
     .div_make .container .row .div_right .div_flex .div_margin2 .div_color_right {
         display: flex;
-        width: 100%;
         justify-content: center;
+        width: 100%;
         margin-top: 50px;
         border-radius: 20px;
     }
@@ -564,7 +555,7 @@ body {
     }
 
     .div_margin_my .container .div_flex3 .div_col_color img {
-        height: 50%;
+        width: 100%;
     }
 
     .div_color .container .row div .div_white .div_flex1 {
@@ -574,6 +565,11 @@ body {
     .div_color .container .row div .div_white .div_flex1 img {
         width: 100%;
         margin-left: 0px;
+    }
+
+    .navbar-collapse {
+        background-color: orange;
+        border-radius: 16px;
     }
 }
 
